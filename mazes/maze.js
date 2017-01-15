@@ -1,19 +1,27 @@
 var squareSide = 20;
-var columns = 5;
-var rows = 5;
+var columns = 20;
+var rows = 20;
 var canvasWidth = columns * squareSide;
 var canvasHeight = rows * squareSide;
 
 var edges = [];
 var vertices = [];
+var removedVertices = [];
+
+var fr = 50;
+var frameCount = 1;
+var disappearRate = 5; // Number of frames to pass before disappearing.
 
 function setup(){
 	generateEdges();
 	shuffleArray(edges);
 	generateVertices();
 	generateMaze();
+
 	createCanvas(canvasWidth, canvasHeight);
+	frameRate(fr);
 }
+
 
 function draw(){
 	background(255);
@@ -76,6 +84,17 @@ function union(x, y){
 	if(xRoot == yRoot){
 		return false;
 	}
+	var dx = Math.abs(x.c[0] - y.c[0]);
+	if(x.drawn == true){
+		if(dx == 1) x.delta = 0;
+		else x.delta = 1;
+		removedVertices.push(x);
+	}
+	if(y.drawn == true){
+		if(dx == 1) y.delta = 0;
+		else y.delta = 1;
+		removedVertices.push(y);
+	}
 	x.drawn = false;
 	y.drawn = false;
 	if(xRoot.rank < yRoot.rank){
@@ -119,16 +138,31 @@ function getVertex(c, r){
 }
 
 function drawVertices(){
+	// fill(0);
+	// for(var i = 0; i < vertices.length; i++){
+	// 	var vertex = vertices[i];
+	// 	if(vertex.drawn == true){
+	// 		rect(vertex.c[0] * squareSide, vertex.c[1] * squareSide, squareSide, squareSide);
+	// 	}
+	// }
 	fill(0);
-	for(var i = 0; i < vertices.length; i++){
-		var vertex = vertices[i];
-		if(vertex.drawn == true){
-			rect(vertex.c[0] * squareSide, vertex.c[1] * squareSide, squareSide, squareSide);
+	if(frameCount % disappearRate == 0) removedVertices.shift();
+	if(removedVertices.length > 0){
+		for(var i = 0; i < removedVertices.length; i++){
+			var vertex = removedVertices[i];
+			if(i > 0){
+				rect(vertex.c[0] * squareSide, vertex.c[1] * squareSide, squareSide, squareSide);
+			}else{
+				var newSize = Math.floor(squareSide - squareSide*((frameCount % disappearRate)/disappearRate))
+				if(vertex.delta == 0) rect(vertex.c[0] * squareSide, vertex.c[1] * squareSide, newSize, squareSide);
+				else rect(vertex.c[0] * squareSide, vertex.c[1] * squareSide, squareSide, newSize);
+			}
 		}
+		frameCount += 1;
 	}
 }
 
-// Shuffles an array A
+// Shuffles an array a
 function shuffleArray(a) {
     var j, x, i;
     for (i = a.length; i; i--) {
@@ -137,13 +171,6 @@ function shuffleArray(a) {
         a[i - 1] = a[j];
         a[j] = x;
     }
-}
-
-// Swaps A[i] with A[j]
-function swap(A, i, j){
-	var temp = A[i];
-	A[i] = A[j];
-	A[j] = temp;
 }
 
 function drawWalls(){
@@ -164,7 +191,6 @@ function drawWalls(){
 
 function drawEdges(){
 	for(var i = 0; i < edges.length; i++){
-		// drawEdge(edges[i]);
 		if(edges[i] != null) drawEdge(edges[i]);
 	}
 }
@@ -184,7 +210,6 @@ function drawEdge(edge){
 		x2 = x1 + squareSide;
 		y2 = y1;
 	} 
-	// console.log(x1, y1, x2, y2);
 	stroke(0, 0, 0);
 	line(x1, y1, x2, y2);
 }
