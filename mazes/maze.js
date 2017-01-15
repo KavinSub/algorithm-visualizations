@@ -1,6 +1,6 @@
 var squareSide = 20;
-var columns = 3;
-var rows = 3;
+var columns = 5;
+var rows = 5;
 var canvasWidth = columns * squareSide;
 var canvasHeight = rows * squareSide;
 
@@ -9,7 +9,9 @@ var vertices = [];
 
 function setup(){
 	generateEdges();
+	shuffleArray(edges);
 	generateVertices();
+	generateMaze();
 	createCanvas(canvasWidth, canvasHeight);
 }
 
@@ -96,6 +98,12 @@ function find(x){
 	return xRoot;
 }
 
+function generateMaze(){
+	for(var i = 0; i < edges.length; i++){
+		removeEdge(i);
+	}
+}
+
 // Removes an edge between two distinct vertices
 function removeEdge(index){
 	var edge = edges[index];
@@ -118,6 +126,24 @@ function drawVertices(){
 			rect(vertex.c[0] * squareSide, vertex.c[1] * squareSide, squareSide, squareSide);
 		}
 	}
+}
+
+// Shuffles an array A
+function shuffleArray(a) {
+    var j, x, i;
+    for (i = a.length; i; i--) {
+        j = Math.floor(Math.random() * i);
+        x = a[i - 1];
+        a[i - 1] = a[j];
+        a[j] = x;
+    }
+}
+
+// Swaps A[i] with A[j]
+function swap(A, i, j){
+	var temp = A[i];
+	A[i] = A[j];
+	A[j] = temp;
 }
 
 function drawWalls(){
