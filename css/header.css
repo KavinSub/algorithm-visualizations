@@ -1,0 +1,20 @@
+.header {
+	height: 100px;
+	background-color: #2F2F2F;
+	display: inline-block;
+}
+
+.header-main {
+	text-align: center;
+}
+
+.header-main-logo {
+	height: 30px;
+	width: 30px;
+}
+
+.header-main-text {
+	color: #FFFFFF;
+	font-weight: 600;
+	font-size: 40px;
+}
