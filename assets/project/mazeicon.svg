@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200px" height="189px" viewBox="0 0 200 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>mazelogo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-185.000000, -122.000000)">
+            <g id="mazelogo" transform="translate(185.000000, 122.000000)">
+                <rect id="Rectangle" fill="#F67174" x="0" y="0" width="200" height="188.372093"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="57.1428571" y="25.6871036" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="142.857143" y="25.6871036" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="111.428571" y="51.3742072" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="54.2857143" y="77.0613108" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="28.5714286" y="102.748414" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="85.7142857" y="77.0613108" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="168.571429" y="77.0613108" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="168.571429" y="102.748414" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="168.571429" y="131.289641" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="114.285714" y="131.289641" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="82.8571429" y="131.289641" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="57.1428571" y="131.289641" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="57.1428571" y="159.830867" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="142.857143" y="51.3742072" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="85.7142857" y="0" width="2.85714286" height="28.5412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="85.7142857" y="51.3742072" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="142.857143" y="51.3742072" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="57.1428571" y="51.3742072" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="25.6871036" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="51.3742072" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="77.0613108" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="28.5714286" y="77.0613108" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="85.7142857" y="77.0613108" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="85.7142857" y="102.748414" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="142.857143" y="102.748414" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="142.857143" y="156.976744" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="114.285714" y="156.976744" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="114.285714" y="131.289641" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="57.1428571" y="131.289641" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="28.5714286" y="159.830867" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="171.428571" y="102.748414" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="28.5714286" y="102.748414" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="142.857143" y="77.0613108" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="28.5714286" y="25.6871036" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="171.428571" y="25.6871036" width="28.5714286" height="2.85412262"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" transform="translate(100.000000, 27.114165) scale(1, -1) translate(-100.000000, -27.114165) " x="85.7142857" y="25.6871036" width="28.5714286" height="2.85412262"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

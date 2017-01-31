@@ -1,0 +1,62 @@
+.algorithm-section {
+	width: 100%;
+	padding-top: 30px;
+}
+
+.algorithm-container {
+	float: left;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.algorithm {
+	width: 300px;
+	height: 300px;
+	box-shadow: 0px 0px 3px #bbb;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.algorithm:hover {
+	box-shadow: 0px 0px 3px #999;
+}
+
+.algorithm-image-container {}
+
+.algorithm-image {
+	padding-top: 30px;
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+.algorithm-header {
+	padding-top: 15px;
+}
+
+.algorithm-header-title {
+	color: black;
+	font-weight: 600;
+	font-size: 16px;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.algorithm-container {
+		width: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.algorithm-container {
+		width: 33%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.algorithm-container {
+		width: 25%;
+	}
+}
