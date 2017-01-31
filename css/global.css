@@ -8,6 +8,12 @@ a {
 	text-decoration: none;
 }
 
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+}
+
 canvas {
 	padding-top: 20px;
 	padding-left: 0;

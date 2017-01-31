@@ -138,13 +138,6 @@ function getVertex(c, r){
 }
 
 function drawVertices(){
-	// fill(0);
-	// for(var i = 0; i < vertices.length; i++){
-	// 	var vertex = vertices[i];
-	// 	if(vertex.drawn == true){
-	// 		rect(vertex.c[0] * squareSide, vertex.c[1] * squareSide, squareSide, squareSide);
-	// 	}
-	// }
 	fill(0);
 	if(frameCount % disappearRate == 0) removedVertices.shift();
 	if(removedVertices.length > 0){
