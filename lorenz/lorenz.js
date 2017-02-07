@@ -1,5 +1,6 @@
 var px = 0.0;
 var py = 0.0;
+var pz = 0.0;
 
 var x = 0.01;
 var y = 0.0;
@@ -25,6 +26,7 @@ function setup(){
 function draw(){
 	px = x;
 	py = y;
+	pz = z;
 	x = x + dx();
 	y = y + dy();
 	z = z + dz();
